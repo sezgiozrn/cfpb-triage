@@ -1,0 +1,6 @@
+data/*.db
+data/*.parquet
+!data/samples/
+__pycache__/
+.env
+.venv/
