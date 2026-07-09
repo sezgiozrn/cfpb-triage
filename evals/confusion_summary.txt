@@ -1,0 +1,38 @@
+Overall agreement: 399/500 (79.8%)
+
+Disagreements by (official -> predicted), descending:
+   13  Debt or credit management  ->  Debt collection
+    9  Money transfer, virtual currency, or money service  ->  Checking or savings account
+    8  Prepaid card  ->  Checking or savings account
+    6  Debt or credit management  ->  Checking or savings account
+    5  Payday loan, title loan, personal loan, or advance loan  ->  Debt collection
+    5  Vehicle loan or lease  ->  Debt collection
+    4  Checking or savings account  ->  Money transfer, virtual currency, or money service
+    4  Credit card  ->  Checking or savings account
+    4  Debt or credit management  ->  Credit card
+    3  Checking or savings account  ->  Prepaid card
+    3  Debt collection  ->  Debt or credit management
+    3  Debt or credit management  ->  Mortgage
+    3  Payday loan, title loan, personal loan, or advance loan  ->  Student loan
+    3  Prepaid card  ->  Credit card
+    2  Credit card  ->  Debt collection
+    2  Money transfer, virtual currency, or money service  ->  Debt collection
+    2  Mortgage  ->  Payday loan, title loan, personal loan, or advance loan
+    2  Payday loan, title loan, personal loan, or advance loan  ->  Mortgage
+    2  Payday loan, title loan, personal loan, or advance loan  ->  Credit card
+    2  Payday loan, title loan, personal loan, or advance loan  ->  Debt or credit management
+    2  Payday loan, title loan, personal loan, or advance loan  ->  Vehicle loan or lease
+    1  Checking or savings account  ->  Debt or credit management
+    1  Credit card  ->  Debt or credit management
+    1  Debt or credit management  ->  Vehicle loan or lease
+    1  Debt or credit management  ->  Money transfer, virtual currency, or money service
+    1  Mortgage  ->  Debt collection
+    1  Mortgage  ->  Debt or credit management
+    1  Mortgage  ->  Student loan
+    1  Payday loan, title loan, personal loan, or advance loan  ->  Money transfer, virtual currency, or money service
+    1  Student loan  ->  Mortgage
+    1  Student loan  ->  Debt collection
+    1  Student loan  ->  Checking or savings account
+    1  Student loan  ->  Payday loan, title loan, personal loan, or advance loan
+    1  Vehicle loan or lease  ->  Payday loan, title loan, personal loan, or advance loan
+    1  Vehicle loan or lease  ->  Credit card

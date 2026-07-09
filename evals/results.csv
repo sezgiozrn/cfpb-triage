@@ -1,0 +1,501 @@
+complaint_id,product_official,product_predicted,match
+8429446,Checking or savings account,Checking or savings account,True
+12352008,Checking or savings account,Checking or savings account,True
+9692597,Checking or savings account,Checking or savings account,True
+9243574,Checking or savings account,Checking or savings account,True
+8144382,Checking or savings account,Prepaid card,False
+9392151,Checking or savings account,Checking or savings account,True
+10286552,Checking or savings account,Debt or credit management,False
+12931093,Checking or savings account,Checking or savings account,True
+11839705,Checking or savings account,Checking or savings account,True
+10823581,Checking or savings account,Checking or savings account,True
+11389224,Checking or savings account,Checking or savings account,True
+10174680,Checking or savings account,Prepaid card,False
+11156501,Checking or savings account,Checking or savings account,True
+9391633,Checking or savings account,Checking or savings account,True
+12531235,Checking or savings account,Checking or savings account,True
+11253530,Checking or savings account,Checking or savings account,True
+10773610,Checking or savings account,Checking or savings account,True
+8460483,Checking or savings account,"Money transfer, virtual currency, or money service",False
+9582324,Checking or savings account,Checking or savings account,True
+11804196,Checking or savings account,"Money transfer, virtual currency, or money service",False
+9022790,Checking or savings account,Checking or savings account,True
+9728398,Checking or savings account,Checking or savings account,True
+8182062,Checking or savings account,Checking or savings account,True
+9989838,Checking or savings account,Checking or savings account,True
+8996386,Checking or savings account,Checking or savings account,True
+8625994,Checking or savings account,Checking or savings account,True
+8738416,Checking or savings account,Checking or savings account,True
+11582711,Checking or savings account,Checking or savings account,True
+8164604,Checking or savings account,Checking or savings account,True
+9319391,Checking or savings account,"Money transfer, virtual currency, or money service",False
+8576467,Checking or savings account,Checking or savings account,True
+10020555,Checking or savings account,Checking or savings account,True
+11941093,Checking or savings account,Checking or savings account,True
+9074937,Checking or savings account,Checking or savings account,True
+8924675,Checking or savings account,Checking or savings account,True
+8948239,Checking or savings account,"Money transfer, virtual currency, or money service",False
+12527513,Checking or savings account,Checking or savings account,True
+12164259,Checking or savings account,Checking or savings account,True
+9254112,Checking or savings account,Checking or savings account,True
+11228419,Checking or savings account,Checking or savings account,True
+8277618,Checking or savings account,Checking or savings account,True
+9448607,Checking or savings account,Checking or savings account,True
+9213543,Checking or savings account,Checking or savings account,True
+12308921,Checking or savings account,Checking or savings account,True
+11003976,Checking or savings account,Prepaid card,False
+10523342,Checking or savings account,Checking or savings account,True
+8489346,Checking or savings account,Checking or savings account,True
+11562212,Checking or savings account,Checking or savings account,True
+9814172,Checking or savings account,Checking or savings account,True
+10106935,Checking or savings account,Checking or savings account,True
+8605217,Credit card,Credit card,True
+10334339,Credit card,Credit card,True
+11723532,Credit card,Credit card,True
+9752828,Credit card,Credit card,True
+10346299,Credit card,Credit card,True
+9712974,Credit card,Credit card,True
+12217116,Credit card,Credit card,True
+9129710,Credit card,Credit card,True
+12650486,Credit card,Credit card,True
+9448192,Credit card,Credit card,True
+10628183,Credit card,Credit card,True
+12479743,Credit card,Checking or savings account,False
+11259839,Credit card,Checking or savings account,False
+10731687,Credit card,Credit card,True
+11924923,Credit card,Credit card,True
+8876933,Credit card,Credit card,True
+9352048,Credit card,Credit card,True
+11039062,Credit card,Credit card,True
+9553594,Credit card,Checking or savings account,False
+10898288,Credit card,Credit card,True
+12826142,Credit card,Credit card,True
+10113471,Credit card,Credit card,True
+12004819,Credit card,Credit card,True
+8424024,Credit card,Credit card,True
+11888925,Credit card,Credit card,True
+10153888,Credit card,Credit card,True
+8742103,Credit card,Credit card,True
+12740796,Credit card,Debt or credit management,False
+11071899,Credit card,Checking or savings account,False
+9454943,Credit card,Credit card,True
+8314868,Credit card,Credit card,True
+10117517,Credit card,Credit card,True
+8669470,Credit card,Credit card,True
+9118532,Credit card,Credit card,True
+10562124,Credit card,Credit card,True
+11109881,Credit card,Credit card,True
+10115973,Credit card,Debt collection,False
+12210047,Credit card,Credit card,True
+10783942,Credit card,Credit card,True
+9729750,Credit card,Credit card,True
+12800596,Credit card,Credit card,True
+8328340,Credit card,Credit card,True
+9458634,Credit card,Credit card,True
+12215137,Credit card,Credit card,True
+8382624,Credit card,Credit card,True
+10163079,Credit card,Credit card,True
+8528040,Credit card,Credit card,True
+9700949,Credit card,Debt collection,False
+8958446,Credit card,Credit card,True
+9962727,Credit card,Credit card,True
+12606770,Debt collection,Debt collection,True
+9236344,Debt collection,Debt collection,True
+12338473,Debt collection,Debt collection,True
+8936234,Debt collection,Debt collection,True
+8200469,Debt collection,Debt collection,True
+10114647,Debt collection,Debt or credit management,False
+12400417,Debt collection,Debt collection,True
+8333517,Debt collection,Debt collection,True
+8736842,Debt collection,Debt collection,True
+12182606,Debt collection,Debt collection,True
+12713931,Debt collection,Debt collection,True
+12107652,Debt collection,Debt collection,True
+11241651,Debt collection,Debt collection,True
+12681634,Debt collection,Debt collection,True
+12606892,Debt collection,Debt collection,True
+10688497,Debt collection,Debt collection,True
+8109066,Debt collection,Debt or credit management,False
+11222239,Debt collection,Debt collection,True
+8377195,Debt collection,Debt or credit management,False
+12731405,Debt collection,Debt collection,True
+8554785,Debt collection,Debt collection,True
+8309216,Debt collection,Debt collection,True
+8922600,Debt collection,Debt collection,True
+11855946,Debt collection,Debt collection,True
+9227282,Debt collection,Debt collection,True
+10959845,Debt collection,Debt collection,True
+9081687,Debt collection,Debt collection,True
+10220780,Debt collection,Debt collection,True
+8761842,Debt collection,Debt collection,True
+11534605,Debt collection,Debt collection,True
+12706837,Debt collection,Debt collection,True
+10270019,Debt collection,Debt collection,True
+9070043,Debt collection,Debt collection,True
+9721616,Debt collection,Debt collection,True
+9373848,Debt collection,Debt collection,True
+8445597,Debt collection,Debt collection,True
+9231041,Debt collection,Debt collection,True
+10749915,Debt collection,Debt collection,True
+8612072,Debt collection,Debt collection,True
+8451017,Debt collection,Debt collection,True
+10405716,Debt collection,Debt collection,True
+11832155,Debt collection,Debt collection,True
+8186120,Debt collection,Debt collection,True
+12796675,Debt collection,Debt collection,True
+8271757,Debt collection,Debt collection,True
+10691870,Debt collection,Debt collection,True
+8211335,Debt collection,Debt collection,True
+12549397,Debt collection,Debt collection,True
+11694817,Debt collection,Debt collection,True
+8655203,Debt collection,Debt collection,True
+8663368,Debt or credit management,Debt or credit management,True
+12522061,Debt or credit management,Credit card,False
+10665366,Debt or credit management,Checking or savings account,False
+9745357,Debt or credit management,Checking or savings account,False
+9607601,Debt or credit management,Mortgage,False
+8691823,Debt or credit management,Debt or credit management,True
+9003888,Debt or credit management,Debt or credit management,True
+11190243,Debt or credit management,Debt collection,False
+10545059,Debt or credit management,Debt collection,False
+10872771,Debt or credit management,Debt collection,False
+9129063,Debt or credit management,Debt collection,False
+10804829,Debt or credit management,Debt or credit management,True
+9617934,Debt or credit management,Debt or credit management,True
+11612878,Debt or credit management,Checking or savings account,False
+11585678,Debt or credit management,Debt collection,False
+11317758,Debt or credit management,Debt or credit management,True
+10811955,Debt or credit management,Debt collection,False
+10001790,Debt or credit management,Debt or credit management,True
+8378760,Debt or credit management,Debt or credit management,True
+11775830,Debt or credit management,Vehicle loan or lease,False
+8247250,Debt or credit management,Debt or credit management,True
+8468979,Debt or credit management,Debt or credit management,True
+9669501,Debt or credit management,Debt or credit management,True
+11491215,Debt or credit management,Debt or credit management,True
+11130903,Debt or credit management,Debt or credit management,True
+11763659,Debt or credit management,Debt or credit management,True
+8762636,Debt or credit management,Debt collection,False
+8829424,Debt or credit management,Credit card,False
+11293866,Debt or credit management,Debt or credit management,True
+9246569,Debt or credit management,Debt or credit management,True
+9832274,Debt or credit management,Debt or credit management,True
+8869486,Debt or credit management,Debt collection,False
+10267257,Debt or credit management,Debt collection,False
+11659322,Debt or credit management,Checking or savings account,False
+9511535,Debt or credit management,Credit card,False
+8640717,Debt or credit management,Debt or credit management,True
+9995351,Debt or credit management,Debt or credit management,True
+8224405,Debt or credit management,Debt collection,False
+11720305,Debt or credit management,Debt collection,False
+8751412,Debt or credit management,Checking or savings account,False
+11335739,Debt or credit management,Debt or credit management,True
+9275864,Debt or credit management,Debt or credit management,True
+12345667,Debt or credit management,Checking or savings account,False
+11873259,Debt or credit management,"Money transfer, virtual currency, or money service",False
+11181318,Debt or credit management,Mortgage,False
+12560569,Debt or credit management,Credit card,False
+8691997,Debt or credit management,Debt collection,False
+9909140,Debt or credit management,Debt collection,False
+12836928,Debt or credit management,Debt or credit management,True
+8723416,Debt or credit management,Mortgage,False
+11581796,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11597563,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11544026,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11518334,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11684051,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+8812996,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11532190,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11721118,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12055078,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12406319,"Money transfer, virtual currency, or money service",Checking or savings account,False
+12479822,"Money transfer, virtual currency, or money service",Debt collection,False
+11676819,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11675564,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11543727,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11795094,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12554590,"Money transfer, virtual currency, or money service",Checking or savings account,False
+11723636,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12172433,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+9500771,"Money transfer, virtual currency, or money service",Checking or savings account,False
+9931721,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11597127,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11598027,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12497296,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11806848,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12095855,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11585763,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+8174636,"Money transfer, virtual currency, or money service",Checking or savings account,False
+11576812,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+8345231,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12825273,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11249132,"Money transfer, virtual currency, or money service",Checking or savings account,False
+11518005,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12488980,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11585856,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11849917,"Money transfer, virtual currency, or money service",Debt collection,False
+9843758,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11741478,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11577666,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11567521,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11519821,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11546897,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11895824,"Money transfer, virtual currency, or money service",Checking or savings account,False
+11578264,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11680843,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+12108079,"Money transfer, virtual currency, or money service",Checking or savings account,False
+11852136,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+11549955,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+8337241,"Money transfer, virtual currency, or money service",Checking or savings account,False
+8578362,"Money transfer, virtual currency, or money service",Checking or savings account,False
+10521680,"Money transfer, virtual currency, or money service","Money transfer, virtual currency, or money service",True
+9187065,Mortgage,Mortgage,True
+12483031,Mortgage,Mortgage,True
+8294882,Mortgage,Mortgage,True
+9396558,Mortgage,Mortgage,True
+9427505,Mortgage,Mortgage,True
+11707658,Mortgage,Mortgage,True
+8624573,Mortgage,Mortgage,True
+10875937,Mortgage,Mortgage,True
+10849176,Mortgage,Mortgage,True
+9345569,Mortgage,Mortgage,True
+11067028,Mortgage,Mortgage,True
+8670246,Mortgage,Mortgage,True
+8402037,Mortgage,Mortgage,True
+10915826,Mortgage,Mortgage,True
+8479923,Mortgage,Mortgage,True
+9561405,Mortgage,Mortgage,True
+11117623,Mortgage,Mortgage,True
+9808937,Mortgage,Mortgage,True
+9656157,Mortgage,Mortgage,True
+10894263,Mortgage,Mortgage,True
+10861436,Mortgage,Mortgage,True
+10011078,Mortgage,Mortgage,True
+8255139,Mortgage,Mortgage,True
+8443358,Mortgage,Mortgage,True
+9651288,Mortgage,Mortgage,True
+8477339,Mortgage,Mortgage,True
+12680861,Mortgage,Mortgage,True
+10909790,Mortgage,Mortgage,True
+9651595,Mortgage,Mortgage,True
+12057331,Mortgage,Mortgage,True
+8788255,Mortgage,Mortgage,True
+8523519,Mortgage,Mortgage,True
+8586108,Mortgage,Debt collection,False
+12289598,Mortgage,Mortgage,True
+8723647,Mortgage,Debt or credit management,False
+11098904,Mortgage,Mortgage,True
+8390315,Mortgage,"Payday loan, title loan, personal loan, or advance loan",False
+12237885,Mortgage,Mortgage,True
+9645470,Mortgage,Mortgage,True
+9216509,Mortgage,Mortgage,True
+8114943,Mortgage,Mortgage,True
+12510071,Mortgage,"Payday loan, title loan, personal loan, or advance loan",False
+12871646,Mortgage,Mortgage,True
+10448238,Mortgage,Mortgage,True
+9135304,Mortgage,Mortgage,True
+12827949,Mortgage,Mortgage,True
+9063602,Mortgage,Student loan,False
+11763559,Mortgage,Mortgage,True
+9497235,Mortgage,Mortgage,True
+11175772,Mortgage,Mortgage,True
+9199256,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+12386405,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9072575,"Payday loan, title loan, personal loan, or advance loan",Student loan,False
+12296112,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11145498,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11502003,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+10000911,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+8846379,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9039194,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+8723588,"Payday loan, title loan, personal loan, or advance loan",Mortgage,False
+10527620,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11934337,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+12935637,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+8138252,"Payday loan, title loan, personal loan, or advance loan",Mortgage,False
+8482706,"Payday loan, title loan, personal loan, or advance loan",Debt collection,False
+12773516,"Payday loan, title loan, personal loan, or advance loan",Credit card,False
+12075499,"Payday loan, title loan, personal loan, or advance loan",Debt collection,False
+12510271,"Payday loan, title loan, personal loan, or advance loan",Student loan,False
+8267771,"Payday loan, title loan, personal loan, or advance loan","Money transfer, virtual currency, or money service",False
+11796055,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+8903596,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11996038,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9495542,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9526063,"Payday loan, title loan, personal loan, or advance loan",Debt collection,False
+12049114,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+12203461,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+10688029,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+8460795,"Payday loan, title loan, personal loan, or advance loan",Debt or credit management,False
+10840132,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+8612639,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+10847449,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9436154,"Payday loan, title loan, personal loan, or advance loan",Student loan,False
+12306164,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9273783,"Payday loan, title loan, personal loan, or advance loan",Debt or credit management,False
+8635880,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11806995,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11374569,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11048560,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11227302,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9080826,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+12168267,"Payday loan, title loan, personal loan, or advance loan",Debt collection,False
+8217774,"Payday loan, title loan, personal loan, or advance loan",Debt collection,False
+10851011,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,False
+11075334,"Payday loan, title loan, personal loan, or advance loan",Vehicle loan or lease,False
+12085043,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9413000,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9288155,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+8825135,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+9533514,"Payday loan, title loan, personal loan, or advance loan","Payday loan, title loan, personal loan, or advance loan",True
+11992775,"Payday loan, title loan, personal loan, or advance loan",Credit card,False
+11484296,Prepaid card,Prepaid card,True
+8340124,Prepaid card,Prepaid card,True
+12112931,Prepaid card,Prepaid card,True
+8509837,Prepaid card,Prepaid card,True
+10266768,Prepaid card,Prepaid card,True
+10915104,Prepaid card,Prepaid card,True
+9277534,Prepaid card,Prepaid card,True
+12507742,Prepaid card,Prepaid card,True
+8976038,Prepaid card,Prepaid card,True
+9847759,Prepaid card,Credit card,False
+8964955,Prepaid card,Prepaid card,True
+9115639,Prepaid card,Checking or savings account,False
+8406219,Prepaid card,Prepaid card,True
+12110415,Prepaid card,Prepaid card,True
+12682789,Prepaid card,Prepaid card,True
+8481410,Prepaid card,Checking or savings account,False
+9755205,Prepaid card,Checking or savings account,False
+12881035,Prepaid card,Prepaid card,True
+11951260,Prepaid card,Prepaid card,True
+8717661,Prepaid card,Prepaid card,True
+11463437,Prepaid card,Prepaid card,True
+9224435,Prepaid card,Prepaid card,True
+8119917,Prepaid card,Checking or savings account,False
+9327473,Prepaid card,Prepaid card,True
+12747475,Prepaid card,Prepaid card,True
+8276088,Prepaid card,Credit card,False
+10139187,Prepaid card,Checking or savings account,False
+11284552,Prepaid card,Prepaid card,True
+8848773,Prepaid card,Prepaid card,True
+9969337,Prepaid card,Prepaid card,True
+9359171,Prepaid card,Prepaid card,True
+10587163,Prepaid card,Prepaid card,True
+9675371,Prepaid card,Checking or savings account,False
+9886682,Prepaid card,Prepaid card,True
+9685856,Prepaid card,Prepaid card,True
+10057872,Prepaid card,Prepaid card,True
+8104339,Prepaid card,Credit card,False
+8426773,Prepaid card,Prepaid card,True
+12553229,Prepaid card,Prepaid card,True
+10285246,Prepaid card,Prepaid card,True
+9817947,Prepaid card,Prepaid card,True
+9036970,Prepaid card,Checking or savings account,False
+9344846,Prepaid card,Checking or savings account,False
+9011980,Prepaid card,Prepaid card,True
+8696693,Prepaid card,Prepaid card,True
+8420170,Prepaid card,Prepaid card,True
+10604252,Prepaid card,Prepaid card,True
+9743132,Prepaid card,Prepaid card,True
+10434797,Prepaid card,Prepaid card,True
+12364002,Prepaid card,Prepaid card,True
+10604088,Student loan,Student loan,True
+11600444,Student loan,Student loan,True
+11352130,Student loan,Student loan,True
+8768331,Student loan,Student loan,True
+8092793,Student loan,Student loan,True
+12443970,Student loan,Student loan,True
+8952438,Student loan,Student loan,True
+11128415,Student loan,Student loan,True
+10518635,Student loan,Student loan,True
+11024971,Student loan,Student loan,True
+9296823,Student loan,Student loan,True
+12013599,Student loan,Student loan,True
+12493029,Student loan,Student loan,True
+8259550,Student loan,Student loan,True
+10755497,Student loan,Student loan,True
+10812711,Student loan,Student loan,True
+8697994,Student loan,Student loan,True
+11559198,Student loan,Student loan,True
+10525796,Student loan,Student loan,True
+12514880,Student loan,Student loan,True
+8135920,Student loan,Student loan,True
+11333430,Student loan,Student loan,True
+8428570,Student loan,Mortgage,False
+8213477,Student loan,Student loan,True
+12225169,Student loan,Student loan,True
+8616045,Student loan,Student loan,True
+12204476,Student loan,Student loan,True
+8940221,Student loan,Student loan,True
+9705907,Student loan,Student loan,True
+11835039,Student loan,Student loan,True
+12820830,Student loan,Debt collection,False
+11869156,Student loan,Student loan,True
+8425047,Student loan,Student loan,True
+10433811,Student loan,Student loan,True
+8920456,Student loan,Student loan,True
+11021284,Student loan,Checking or savings account,False
+12718199,Student loan,"Payday loan, title loan, personal loan, or advance loan",False
+9772309,Student loan,Student loan,True
+11608578,Student loan,Student loan,True
+11542629,Student loan,Student loan,True
+8604164,Student loan,Student loan,True
+10381596,Student loan,Student loan,True
+11830942,Student loan,Student loan,True
+12097412,Student loan,Student loan,True
+12015967,Student loan,Student loan,True
+11616817,Student loan,Student loan,True
+11136645,Student loan,Student loan,True
+11604876,Student loan,Student loan,True
+11343366,Student loan,Student loan,True
+11420930,Student loan,Student loan,True
+12191379,Vehicle loan or lease,Vehicle loan or lease,True
+9024945,Vehicle loan or lease,Vehicle loan or lease,True
+12652595,Vehicle loan or lease,Vehicle loan or lease,True
+8599832,Vehicle loan or lease,Vehicle loan or lease,True
+8499199,Vehicle loan or lease,Vehicle loan or lease,True
+12225016,Vehicle loan or lease,Vehicle loan or lease,True
+12501602,Vehicle loan or lease,Vehicle loan or lease,True
+11472606,Vehicle loan or lease,Vehicle loan or lease,True
+9861557,Vehicle loan or lease,Vehicle loan or lease,True
+9257524,Vehicle loan or lease,Debt collection,False
+10345925,Vehicle loan or lease,Vehicle loan or lease,True
+10111969,Vehicle loan or lease,Vehicle loan or lease,True
+11417921,Vehicle loan or lease,Vehicle loan or lease,True
+8941580,Vehicle loan or lease,Vehicle loan or lease,True
+9162417,Vehicle loan or lease,Vehicle loan or lease,True
+12337798,Vehicle loan or lease,Vehicle loan or lease,True
+8823123,Vehicle loan or lease,Debt collection,False
+9833270,Vehicle loan or lease,Vehicle loan or lease,True
+11888697,Vehicle loan or lease,"Payday loan, title loan, personal loan, or advance loan",False
+12225209,Vehicle loan or lease,Vehicle loan or lease,True
+8875016,Vehicle loan or lease,Vehicle loan or lease,True
+12133700,Vehicle loan or lease,Vehicle loan or lease,True
+9701295,Vehicle loan or lease,Vehicle loan or lease,True
+8577567,Vehicle loan or lease,Debt collection,False
+8760783,Vehicle loan or lease,Vehicle loan or lease,True
+12674322,Vehicle loan or lease,Credit card,False
+9179474,Vehicle loan or lease,Vehicle loan or lease,True
+11102272,Vehicle loan or lease,Vehicle loan or lease,True
+10294094,Vehicle loan or lease,Vehicle loan or lease,True
+12696319,Vehicle loan or lease,Vehicle loan or lease,True
+8481163,Vehicle loan or lease,Vehicle loan or lease,True
+9301765,Vehicle loan or lease,Vehicle loan or lease,True
+9672630,Vehicle loan or lease,Vehicle loan or lease,True
+9680825,Vehicle loan or lease,Vehicle loan or lease,True
+11687863,Vehicle loan or lease,Vehicle loan or lease,True
+10193013,Vehicle loan or lease,Vehicle loan or lease,True
+9866086,Vehicle loan or lease,Vehicle loan or lease,True
+11010337,Vehicle loan or lease,Debt collection,False
+10536292,Vehicle loan or lease,Vehicle loan or lease,True
+8466772,Vehicle loan or lease,Vehicle loan or lease,True
+12162644,Vehicle loan or lease,Vehicle loan or lease,True
+10862990,Vehicle loan or lease,Vehicle loan or lease,True
+8746951,Vehicle loan or lease,Vehicle loan or lease,True
+11247094,Vehicle loan or lease,Debt collection,False
+9141681,Vehicle loan or lease,Vehicle loan or lease,True
+12837053,Vehicle loan or lease,Vehicle loan or lease,True
+10579611,Vehicle loan or lease,Vehicle loan or lease,True
+11490376,Vehicle loan or lease,Vehicle loan or lease,True
+8414742,Vehicle loan or lease,Vehicle loan or lease,True
+10135968,Vehicle loan or lease,Vehicle loan or lease,True
