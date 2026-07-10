@@ -30,12 +30,6 @@ timely-response rates by product and by company using SQL (DuckDB).
 3. The real, evidence-backed outlier is **EdFinancial Services**: 50.7% timely
    response, about half of every peer servicer (88–100%), while still granting 0%
    relief.
-4. **AI-assisted feasibility check:** an LLM classification eval on 500 real complaint
-   narratives (79.8% overall agreement with official categories) surfaced a likely
-   intake-labeling problem, not a model-accuracy problem — one category ("Debt or
-   credit management," 44% agreement) appears to absorb misfiled debt-collection
-   complaints. Full method and hand-inspected examples in
-   [evals/README.md](evals/README.md).
 
 **Recommendation.** Replace portfolio-wide comparison with within-product-category
 benchmarking (KPI-04). Pilot on the student loan category (8 servicers, already
