@@ -7,7 +7,7 @@
 SELECT
     complaint_id,
     COUNT(*) AS n
-FROM complaints
+FROM complaints_raw
 GROUP BY complaint_id
 HAVING COUNT(*) > 1
 ORDER BY n DESC;
@@ -16,7 +16,7 @@ ORDER BY n DESC;
 SELECT COUNT(*) AS duplicate_id_count
 FROM (
     SELECT complaint_id
-    FROM complaints
+    FROM complaints_raw
     GROUP BY complaint_id
     HAVING COUNT(*) > 1
 );
@@ -27,7 +27,7 @@ FROM (
 SELECT
     company, date_received, product,
     COUNT(*) AS n
-FROM complaints
+FROM complaints_raw
 GROUP BY company, date_received, product
 HAVING COUNT(*) > 20
 ORDER BY n DESC

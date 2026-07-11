@@ -8,14 +8,14 @@ SELECT
     MAX(date_received) AS latest,
     COUNT(*)            AS total_rows,
     COUNT(DISTINCT complaint_id) AS distinct_ids
-FROM complaints;
+FROM complaints_raw;
 
 -- Monthly volume — eyeball for gaps or suspicious cliffs (API pagination
 -- bugs and CSV truncation both show up here first)
 SELECT
     date_trunc('month', date_received) AS month,
     COUNT(*) AS n
-FROM complaints
+FROM complaints_raw
 GROUP BY 1
 ORDER BY 1;
 
@@ -28,4 +28,4 @@ SELECT
     COUNT(*) FILTER (WHERE company IS NULL)                AS null_company,
     COUNT(*) FILTER (WHERE company_response IS NULL)      AS null_response,
     COUNT(*) FILTER (WHERE timely IS NULL)                 AS null_timely
-FROM complaints;
+FROM complaints_raw;

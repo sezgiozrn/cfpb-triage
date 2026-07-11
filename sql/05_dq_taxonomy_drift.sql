@@ -11,7 +11,7 @@ SELECT
     MIN(date_received) AS first_seen,
     MAX(date_received) AS last_seen,
     COUNT(*) AS n
-FROM complaints
+FROM complaints_raw
 GROUP BY product
 ORDER BY first_seen;
 
@@ -23,7 +23,7 @@ SELECT
     MIN(date_received) AS first_seen,
     MAX(date_received) AS last_seen,
     COUNT(*) AS n
-FROM complaints
+FROM complaints_raw
 WHERE sub_product IS NOT NULL
 GROUP BY product, sub_product
 ORDER BY product, first_seen;
