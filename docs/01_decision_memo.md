@@ -7,6 +7,9 @@
 (vs. the current practice of comparing servicers against a single portfolio-wide
 relief-rate target)
 
+*Portfolio artifact — self-directed analysis on public CFPB data; the addressee
+role is illustrative, not a real engagement (see repo README).*
+
 ---
 
 ## Recommendation

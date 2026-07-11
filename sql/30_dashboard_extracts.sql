@@ -2,6 +2,9 @@
 -- Purpose: pre-aggregated extracts for the Tableau dashboard. Two views,
 -- matching the memo's two-part story: (1) why product-level context
 -- matters, (2) the actual within-category scorecard.
+-- NOTE: these are CSV-export copies of the analysis queries in
+-- 10_relief_outcomes.sql (F1 and F2/F3). The memo's evidence traces to the
+-- 10_ file; this file only exists so Tableau has clean inputs.
 
 -- Extract 1: relief rate by product (motivates the whole methodology fix --
 -- this is the 14x variation that made the naive comparison wrong)

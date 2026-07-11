@@ -56,9 +56,9 @@ docs/04_data_notes.md for why).
 |---|---|
 | **Business question** | Given KPI-02's product-confound, which individual companies deviate from their *own product category's* peer average — the actual outlier-detection question this project needs? |
 | **Definition (plain English)** | A company's KPI-01 or KPI-02 value, compared only against other companies in the same product category with sufficient volume, not against the portfolio-wide average. |
-| **Formula** | Company rate vs. product-category median rate, computed only for companies with n>=20 within that product |
+| **Formula** | Company rate vs. product-category median rate, computed only for companies with n>=20 within that product; flag = strictly below the category's bottom quartile on either rate (strict `<` so mass-ties at 0.0% relief don't flag half a category — threshold tuning is BRD open question #1) |
 | **Grain** | company, within product |
-| **Source query** | `sql/10_relief_outcomes.sql` (student loan servicer breakdown) |
+| **Source query** | `sql/20_kpi_within_category_deviation.sql` |
 | **Inclusions / exclusions** | n>=20 threshold to exclude noisy small-sample companies (see KPI-01 limitations) |
 | **Edge cases** | Products with very few companies (e.g., a near-monopoly servicer) don't have a meaningful peer set — flag rather than compute a "deviation" for those. |
 | **Known limitations** | This is the KPI that actually answers the project's decision question. KPI-02 alone, without this stratification, produces a false positive (see decision memo for the corrected finding). |
@@ -73,3 +73,4 @@ docs/04_data_notes.md for why).
 | Date | KPI | Change | Reason |
 |---|---|---|---|
 | 2026-07-09 | KPI-02 | Added mandatory product-stratification rule to Known limitations | A naive company-vs-portfolio-average comparison (MOHELA vs. "all others" pooled) produced a headline finding that didn't survive a product-level and within-category check — MOHELA turned out to be typical for its product, not an outlier. Corrected before it reached the memo. |
+| 2026-07-10 | KPI-04 | Implemented as `sql/20_kpi_within_category_deviation.sql` (was spec-only); flag rule made strict `<` bottom quartile | Running the query surfaced a tie-handling edge case: 4 of 8 student-loan servicers tie at 0.0% relief, so `<=` q25 would flag half the category on a meaningless tie. Strict `<` reproduces the memo's exact outcome (EdFinancial + FSA contractor flagged, MOHELA not). |

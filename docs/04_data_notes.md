@@ -5,10 +5,10 @@
 - **Dataset:** CFPB Consumer Complaint Database
 - **Access:** Public API — https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/
 - **Scope:** California only (`state=CA`)
-- **Window pulled:** 2024-01-01 to 2025-04-13 (15.4 months — see "Known issues" #1 for why not the full 2 years)
-- **Pulled on:** 2026-07-09
-- **Snapshot tag:** `2026-07-08-ca-2yr` (391,728 rows in `complaints_raw`)
-- **Analysis scope:** `complaints_core` view = `complaints_raw` WHERE product != 'Credit reporting or other personal consumer reports' (59,291 rows — see "Known issues" #4)
+- **Window pulled:** 2024-01-01 to 2025-04-13 (15.4 months — see ingestion issue #5 for why not the full 2 years)
+- **Pulled:** started 2026-07-08, completed 2026-07-09 (long-running pull — see ingestion issue #5)
+- **Snapshot tag:** `2026-07-08-ca-2yr` (391,728 rows in `complaints_raw`). The tag is named for the pull's *start date* and *intended* 2-year window; the pull was deliberately stopped at 15.4 months (issue #5). Kept as-is rather than renamed — the tag is baked into the DB rows and renaming a snapshot after the fact is worse than a slightly wrong label with a documented explanation.
+- **Analysis scope:** `complaints_core` view = `complaints_raw` WHERE product != 'Credit reporting or other personal consumer reports' (59,291 rows — see data-quality issue #1)
 
 ## Schema summary
 
@@ -41,7 +41,8 @@
 |---|---|---|---|---|
 | 1 | **Credit reporting complaints dominate the dataset (84.9%, 332,437 of 391,728 rows).** This is a known real-world pattern (mass-filed disputes against the 3 credit bureaus), not an ingestion artifact. | `sql/05_dq_taxonomy_drift.sql` product breakdown | Excluded "Credit reporting or other personal consumer reports" from the core analysis scope (`complaints_core` view, 59,291 rows) — it would otherwise drown out every other product's signal in any stall-rate or volume finding | Analysis scope is now the ~15% of complaints tied to banking, cards, loans, debt collection, and money transfer — more operationally diverse, better fit for a triage-workflow story |
 | 2 | Narrative availability (consumer opted in to publish their story) varies sharply by product: 25.3% for credit reporting vs. 73.1% for money transfer, 29.6% overall. | `sql/05_dq_narrative_bias.sql` | Any Phase-2 LLM classification eval sampling from narratives is NOT a representative sample of all complaints — flagging now before `evals/` gets built | Narrative-based findings must be scoped explicitly to "complaints with narratives," not generalized to all complaints |
-| 3 | Monthly complaint volume rises steadily from ~14k (Jan 2024) to a peak of ~40k (Jan 2025), with an irregular dip in Feb 2025 and a partial, lower count in Apr 2025 (data cutoff mid-month). | `sql/05_dq_coverage.sql` monthly breakdown | Not yet explained — could be real growth, could be a publication-lag artifact (CFPB publishes complaints only after company response or 15 days, so the most recent ~2-4 weeks of any pull will always undercount) | Treat the most recent 3-4 weeks of the window (mid-March through April 13, 2025) as provisionally undercounted until checked in EDA; don't use them for a trend-line finding without that caveat |
+| 3 | **Duplicate check: clean.** 0 duplicate complaint_ids across all 391,728 rows; near-duplicate probe (same company + same date_received timestamp + same product, threshold >20) returned 0 clusters. Run 2026-07-09 against the final snapshot, post issue-#6 cleanup. | `sql/05_dq_duplicates.sql` | No remediation needed — recorded so the check doesn't read as unrun | None — confirms the retry-safe pagination didn't double-insert pages |
+| 4 | Monthly complaint volume rises steadily from ~14k (Jan 2024) to a peak of ~40k (Jan 2025), with an irregular dip in Feb 2025 and a partial, lower count in Apr 2025 (data cutoff mid-month). | `sql/05_dq_coverage.sql` monthly breakdown | Not yet explained — could be real growth, could be a publication-lag artifact (CFPB publishes complaints only after company response or 15 days, so the most recent ~2-4 weeks of any pull will always undercount) | Treat the most recent 3-4 weeks of the window (mid-March through April 13, 2025) as provisionally undercounted until checked in EDA; don't use them for a trend-line finding without that caveat |
 
 ## Known biases & limitations
 

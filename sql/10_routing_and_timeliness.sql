@@ -1,6 +1,6 @@
 -- 10_routing_and_timeliness.sql
 -- Purpose: baseline triage metrics on the core scope (credit reporting excluded).
--- Feeds KPI-01, KPI-02 in docs/03_kpi_dictionary.md
+-- Feeds KPI-01, KPI-03 in docs/03_kpi_dictionary.md
 
 -- Days to route (received -> sent to company), by product
 SELECT

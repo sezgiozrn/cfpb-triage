@@ -109,7 +109,9 @@ claim:
 
 ## Files
 
-- `build_sample.py` — stratified sampling script (re-fetches narrative text
-  from CFPB's API by complaint_id; narratives are not stored locally)
+- `build_sample.py` — stratified sampling script (fetches narrative text
+  from CFPB's API by complaint_id; the sampled narratives are then saved in
+  `sample.csv` so the eval is reproducible without re-hitting the API —
+  narrative text is public CFPB data, already scrubbed of PII upstream)
 - `classify_and_score.py` — classification + scoring
 - `sample.csv`, `results.csv`, `confusion_summary.txt` — outputs

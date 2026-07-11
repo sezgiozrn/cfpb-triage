@@ -30,6 +30,12 @@ timely-response rates by product and by company using SQL (DuckDB).
 3. The real, evidence-backed outlier is **EdFinancial Services**: 50.7% timely
    response, about half of every peer servicer (88–100%), while still granting 0%
    relief.
+4. **AI-assisted feasibility check:** an LLM classification eval on 500 real complaint
+   narratives (79.8% overall agreement with official categories) surfaced a likely
+   intake-labeling problem, not a model-accuracy problem — one category ("Debt or
+   credit management," 44% agreement) appears to absorb misfiled debt-collection
+   complaints. Full method and hand-inspected examples in
+   [evals/README.md](evals/README.md).
 
 **Recommendation.** Replace portfolio-wide comparison with within-product-category
 benchmarking (KPI-04). Pilot on the student loan category (8 servicers, already
@@ -45,12 +51,19 @@ scoped) for one quarter before extending. Full case in the
 | `docs/01_decision_memo.md` | 1-page recommendation, with the corrected finding and why the naive comparison failed |
 | `docs/02_brd.md` | Requirements for a within-category servicer scorecard |
 | `docs/03_kpi_dictionary.md` | 4 KPIs, including the mandatory product-stratification rule for relief rate |
-| `docs/04_data_notes.md` | 6 real API/ingestion bugs found (incl. a currently-open upstream CFPB bug) + 3 data-quality findings |
+| `docs/04_data_notes.md` | 6 real API/ingestion bugs found (incl. a currently-open upstream CFPB bug) + 4 data-quality findings |
 | `sql/05_dq_*.sql` | Data quality checks: coverage, duplicates, taxonomy drift, narrative bias |
-| `sql/10_*.sql` | Core analysis: routing/timeliness, relief outcomes |
+| `sql/10_*.sql` | Core analysis: routing/timeliness, relief outcomes (findings F1–F3) |
+| `sql/20_kpi_within_category_deviation.sql` | KPI-04 implemented — the within-category scorecard the memo recommends, with the verified flag output in the header |
 | `src/ingest.py` | CA-scoped CFPB API ingestion (search_after pagination, documented API workarounds) |
 
 ## A note on how this was built
+
+**This is a self-directed analysis on public data.** It was not commissioned by
+CFPB, any servicer, or any employer. The stakeholder roles in the decision memo
+and BRD (VP of Consumer Response Operations, compliance analyst, etc.) are
+illustrative — they define who the deliverables are *written for*, not a real
+engagement. The data, the bugs found, and the findings are real.
 
 This project hit a real methodological trap and corrected course in the open rather
 than quietly fixing it: an early cut of the analysis compared each company's relief
@@ -67,9 +80,21 @@ BA finding as the final recommendation.
 
 ```bash
 pip install -r requirements.txt
-python src/ingest.py --from 2024-01-01 --to 2025-12-31 --state CA --db data/complaints.db --snapshot my-pull
-# then run sql/05_*.sql and sql/10_*.sql against data/complaints.db (DuckDB)
+# To approximate the snapshot analyzed here (391,728 rows). The original pull
+# targeted a full 2 years and was stopped deliberately at 2025-04-13 — see
+# data notes, ingestion issue #5:
+python src/ingest.py --from 2024-01-01 --to 2025-04-13 --state CA --db data/complaints.db --snapshot my-pull
+# create the analysis-scope view first, then run the numbered queries in order:
+duckdb data/complaints.db < sql/00_views.sql
+# then sql/05_*.sql, sql/10_*.sql, sql/20_*.sql against data/complaints.db (DuckDB)
 ```
+
+Note: a wider `--to` date will pull more data but won't reproduce the row
+counts in this analysis, and sustained pulls get heavily throttled by the API
+(see data notes, ingestion issue #5 — the original 15.4-month pull took ~9h40m
+wall-clock). The CFPB database also updates daily, so even the exact command
+above will return slightly different rows over time as new complaints for the
+window are published.
 
 ## Data source & caveats
 
