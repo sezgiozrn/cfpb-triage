@@ -10,7 +10,7 @@ SELECT
     has_narrative,
     COUNT(*) AS n,
     ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) AS pct
-FROM complaints
+FROM complaints_raw
 GROUP BY has_narrative;
 
 -- Does narrative availability skew by product? (If complaint types that
@@ -21,7 +21,7 @@ SELECT
     COUNT(*) AS total,
     COUNT(*) FILTER (WHERE has_narrative) AS with_narrative,
     ROUND(100.0 * COUNT(*) FILTER (WHERE has_narrative) / COUNT(*), 1) AS pct_with_narrative
-FROM complaints
+FROM complaints_raw
 GROUP BY product
 ORDER BY total DESC;
 
@@ -30,7 +30,7 @@ SELECT
     state,
     COUNT(*) AS total,
     ROUND(100.0 * COUNT(*) FILTER (WHERE has_narrative) / COUNT(*), 1) AS pct_with_narrative
-FROM complaints
+FROM complaints_raw
 WHERE state IS NOT NULL
 GROUP BY state
 ORDER BY total DESC
