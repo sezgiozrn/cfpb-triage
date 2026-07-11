@@ -26,7 +26,7 @@ portfolio-wide view.
 |---|---|---|---|
 | O1 | Replace portfolio-wide relief-rate comparison with within-category comparison | KPI-04 (Within-Category Servicer Deviation) | 100% of flagged companies have a same-category peer group of n>=2 companies with n>=20 complaints each |
 | O2 | Reduce false-positive review flags on structurally low-relief product categories | KPI-02 review volume, pre/post | Student loan category review flags drop to companies deviating from the 2.6% category baseline, not the 23%+ portfolio baseline |
-| O3 | Surface genuine within-category outliers currently missed | KPI-01 (Timely Response Rate), stratified by product | Pilot correctly flags EdFinancial Services (50.7% timely vs. 88-100% peer range). This is deliberately a known-answer validation case: the outlier was identified in the evidence base, so reproducing it is the pilot's minimum bar, not its success proof — the real O3 test is whether the pilot surfaces outliers *beyond* this one over the quarter |
+| O3 | Surface genuine within-category outliers currently missed | KPI-01 (Timely Response Rate), stratified by product | Pilot correctly flags EdFinancial Services (50.7% timely vs. 88-100% range among reliably-sized peers, excluding the thin-sample FSA contractor entry — see decision memo Evidence #3). This is deliberately a known-answer validation case: the outlier was identified in the evidence base, so reproducing it is the pilot's minimum bar, not its success proof — the real O3 test is whether the pilot surfaces outliers *beyond* this one over the quarter |
 
 ## 3. Scope
 
@@ -93,8 +93,8 @@ flowchart LR
 
 ## 9. Assumptions, constraints, dependencies
 
-- Assumes company and product-category fields remain consistently populated (verified
-  at 100% and 99.9997% respectively in the pilot dataset — see docs/04_data_notes.md).
+- Assumes company and product fields remain consistently populated (verified at
+  100% and 100% respectively in `complaints_core` — see docs/04_data_notes.md).
 - Assumes CFPB's complaint categories and company-response taxonomy remain stable
   during the pilot quarter (a real risk — see docs/04_data_notes.md taxonomy-drift
   finding from the DQ pass).
@@ -108,8 +108,8 @@ flowchart LR
   being in a low-relief-rate product category (i.e., no company is flagged solely for
   falling below a 23%+ portfolio-wide threshold when its category median is <5%).
 - O3: EdFinancial Services appears in the pilot's flagged list, with its 50.7% timely
-  rate shown against the 88-100% peer range (known-answer validation case — see
-  the O3 note in Section 2; this is the floor, not the finish line).
+  rate shown against the 88-100% range among reliably-sized peers (known-answer
+  validation case — see the O3 note in Section 2; this is the floor, not the finish line).
 
 ## 11. Open questions
 
