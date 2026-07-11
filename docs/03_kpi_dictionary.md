@@ -32,7 +32,7 @@ docs/04_data_notes.md for why).
 | **Grain** | product, or company within product |
 | **Source query** | `sql/10_relief_outcomes.sql` |
 | **Inclusions / exclusions** | Monetary and non-monetary relief are combined into one rate. Excludes "Closed with explanation" and "Untimely response" from the numerator. |
-| **Edge cases** | None found — `company_response` is 99.9997% populated (1 null row). |
+| **Edge cases** | None — `company_response` is 100% populated in `complaints_core` (0 nulls, n=59,291). The 1 null row present in the raw 391,728-row ingest falls inside the excluded credit-reporting complaints, so it never reaches this scope. |
 | **Known limitations** | **Critical: this KPI must never be compared across products without controlling for product.** Relief rate varies 14x by product alone (2.6% for student loan vs. 36.8% for credit card) before any company-level effect is considered — this is a structural difference in what "relief" even means per product (e.g., a credit bureau correcting a report entry vs. a bank issuing a refund are very different asks), not a quality signal. **Rule: only compare relief rate within the same product category.** A cross-product comparison that doesn't control for this produced a materially wrong headline finding during this project's own EDA (see docs/04_data_notes.md) — kept as a documented near-miss, not scrubbed from the record. |
 | **Owner** | Ops/compliance analyst |
 
