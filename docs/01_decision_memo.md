@@ -41,8 +41,10 @@ review effort on a company that isn't actually deviating from its category.
    0.0% relief (Maximus, EdFinancial, Nelnet, and the Federal Student Aid contractor)
    — MOHELA's 2.8% is roughly mid-pack, not a low outlier (`sql/10_relief_outcomes.sql`).
 3. The real company-level outlier is **EdFinancial Services**: 50.7% timely-response
-   rate, roughly half of every peer servicer in the category (88–100%), while still
-   granting 0% relief (`sql/10_relief_outcomes.sql`, student-loan servicer breakdown).
+   rate, roughly half of every other reliably-sized peer servicer (88–100%; excludes
+   the Federal Student Aid contractor entry, n=57, flagged separately below as too
+   thin to interpret), while still granting 0% relief (`sql/10_relief_outcomes.sql`,
+   student-loan servicer breakdown).
 
 ## Options considered
 
