@@ -44,6 +44,14 @@ scoped) for one quarter before extending. Full case in the
 
 ---
 
+## Dashboard
+
+![CFPB CA Servicer Benchmarking dashboard — relief rate by product and student-loan servicer scorecard](dashboard/screenshots/01_dashboard_full.png)
+
+*[Explore the interactive version on Tableau Public →](https://public.tableau.com/app/profile/sez.ozrn/viz/CFPBCAServicerBenchmarking/Dashboard1)*
+
+---
+
 ## Repo map
 
 | Path | What it is |
